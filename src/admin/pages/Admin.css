@@ -1,0 +1,179 @@
+
+.form-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 22px;
+  border: 1px solid #eee;
+}
+
+.form-section h2 {
+  font-size: 19px;
+  margin-bottom: 22px;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #444;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #f57224;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.image-upload-box {
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  background: #fffaf6;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.upload-icon {
+  font-size: 42px;
+}
+
+.upload-label strong {
+  color: #f57224;
+}
+
+.upload-label span {
+  font-size: 13px;
+  color: #888;
+}
+
+.preview-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.product-preview {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: white;
+}
+
+.remove-image-btn {
+  background: #fff0f0;
+  color: #e53935;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.submit-btn,
+.cancel-btn,
+.back-btn {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submit-btn {
+  background: #f57224;
+  color: white;
+}
+
+.submit-btn:hover {
+  background: #df5e13;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancel-btn,
+.back-btn {
+  background: #eee;
+  color: #333;
+}
+
+.admin-message {
+  padding: 14px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+.admin-message.success {
+  background: #e8f8ee;
+  color: #168344;
+}
+
+.admin-message.error {
+  background: #fff0f0;
+  color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-section {
+    padding: 16px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}

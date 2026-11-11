@@ -1,0 +1,40 @@
+
+:root {
+  --orange: #f85606;
+  --orange-dark: #e64b00;
+  --text: #212121;
+  --muted: #757575;
+  --surface: #ffffff;
+  --page-bg: #f5f5f5;
+  --border: #eeeeee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--page-bg);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
